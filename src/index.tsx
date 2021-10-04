@@ -5,8 +5,8 @@ import App from './App';
 import { store } from './store/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import { ThemeProvider } from '@material-ui/core';
 import { theme } from 'theme';
+import { ThemeProvider } from '@mui/material';
 
 ReactDOM.render(
   <React.StrictMode>

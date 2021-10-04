@@ -1,6 +1,9 @@
-// A mock function to mimic making an async request for data
-export function fetchMenu(amount = 1) {
-  return new Promise<{ data: number }>((resolve) =>
-    setTimeout(() => resolve({ data: amount }), 500),
-  );
+import API from 'api/api';
+
+export function fetchBankHolidays() {
+  return API.get('/bank-holidays.json');
+}
+
+export function submitBankHolidays(holidays: (string | number)[]) {
+  return API.post('/submit-bank-holidays', { holidays });
 }
