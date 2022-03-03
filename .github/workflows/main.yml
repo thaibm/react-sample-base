@@ -18,7 +18,14 @@ jobs:
           node-version: 16
 
       # Install your dependencies
-      - run: yarn install
+      - run: |
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          yarn install
+          fi
 
       # Run ESLint
       - uses: eslint/github-action@v0

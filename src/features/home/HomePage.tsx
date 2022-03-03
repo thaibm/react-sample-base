@@ -6,7 +6,8 @@ const HomePage = () => {
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <Link to="/counter">Counter Page</Link>
+      <Link to="/counter">Counter Page
+      </Link>
     </header>
   );
 };
