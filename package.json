@@ -27,7 +27,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --ignore-pattern node_modules/",
-    "prettier": "prettier --write \"**/*.{js,jsx,json,css,scss,less,md,ts,tsx}\""
+    "prettier": "prettier --write \"**/*.{js,jsx,json,css,scss,less,md,ts,tsx}\"",
+    "eslint:github-action": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --ignore-pattern node_modules/"
   },
   "husky": {
     "hooks": {
