@@ -18,7 +18,7 @@ jobs:
           node-version: 16
 
       # Install your dependencies
-      - run: npm ci
+      - run: yarn install
 
       # Run ESLint
       - uses: eslint/github-action@v0
